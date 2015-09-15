@@ -63,6 +63,9 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #f2f2f2;
+  @media screen and (max-width:720px){
+    padding: none;
+        }
 }
 /* Logo section*/
 
@@ -70,17 +73,40 @@ body {
   width:250px;
   max-width: auto;
   margin:0 auto 15px auto;
+  @media screen and (max-width:720px){
+    width:190px;
+    margin:0 auto;
+    padding:none;
+        }
 }
+.buttonnav{
+    width:25px;
+    visibility: hidden;
+  @media screen and (max-width:720px){
+    visibility: visible;
+  }
+     
+}
+
 /* Page container */
 .container{
  max-width: 700px;
+    @media screen and (max-width:720px){
+      max-width:320px;}
  margin: 0 auto;
-  img {max-width:700px;
-  }
+ img {max-width:700px;
+ }
+
 
 /* Navigation menu*/
+
+
 .nav{
   padding-left: 2px;
+  @media screen and (max-width:720px){
+    
+  
+  }
   ul{
     list-style-type: none;
     text-align: center;
@@ -107,6 +133,9 @@ body {
           color:#6d8f5d;
         }
     }  
+    @media screen and (max-width:720px){
+      visibility: hidden;
+  }
 }
 
 /* Section directly under main nav */
@@ -115,16 +144,40 @@ body {
   display: block;
   margin:0 auto;
   img{   
-    margin-top:15px;
+    margin:15px 15px 25px 0px;
+    width:700px;
   }
-}
-/* First horizontal divider line */
+  @media screen and (max-width:720px){
+    width:320px;
+    overflow:hidden;
+    }
+  }
+
+/* Horizontal divider line */
 
 .above {
-    margin-top:30px;
+  @media screen and (max-width:720px){
+    display:none;
+    margin:0;
+    padding: 0px;
+  
+  }
+  }
+  .below {
+    display: none;
+    @media screen and (max-width:720px){
+      display:block;
+      max-width: 100%;
+    }
+  
   }
 /* This week's features */
   .features{
+    width:60%;
+    margin:0 auto;
+    padding-top: 20px;
+    @media screen and (max-width:720px){
+      width:90%;}
       .curl{
       width:40px;
       display: inline-block;
@@ -140,17 +193,99 @@ body {
       font-size:22px;
       color:#5a5a5a;
     }
-  }  
+    @media screen and (max-width:720px){
+      width:90%;
+      .curl{
+      width:30px;
+      }
+      .this_week{
+      font-size:18px;
+      }
+    }
+   
+}
 
 /* Section with 3 images */
-    .column{
-      display:inline-block;
-      width:220px;
-      float:none;
-      background: url(images/short_line.png);
-      
+    .column-container{
+      p{
+        margin-top:15px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        color:#5a5a5a;
+        @media screen and (max-width:720px){
+          font-size:18px;
+        margin-bottom: 15px;
+        }
+      }
+      img{
+        width:220px;
+        margin:0;float:none;
+        @media screen and (max-width:720px){
+          width:320px;
+      }
+      }
+      .column-left{
+        float: left;
+        width: 33%;
+        @media screen and (max-width:720px){
+        clear:both;
+        width:100%;
+        display: block;
+        
+        }
+      }
+      .column-right{
+        float: right;
+        width: 33%;
+        @media screen and (max-width:720px){
+        clear: both;
+        width:100%;
+        display: block;
+      }
+      }
+      .column-center{
+        display: inline-block;
+        width: 33%;
+        @media screen and (max-width:720px){
+        clear: both;
+        width:100%;
+        display: block;
+      }
+    }
+    }
+
+
+/* Section with 2 images */
+      .column-container2{
+        clear:both;
+        display:inline-block;
+        img{
+        width:100%;
+      }      
+      .column-a{
+        float:left;
+        width:49%;
+        @media screen and (max-width:720px){
+        clear:both;
+        width:100%;
+        display: block;
+        margin-top:0px;
+        }
+      }
+      .column-b{
+        float:right;
+        width:49%;
+        @media screen and (max-width:720px){
+        clear:both;
+        width:100%;
+        display: block;
+        margin-top:25px;
+        }
+      }
+
   }
+
 }
-  /**/
 
  
