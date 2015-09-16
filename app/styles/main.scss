@@ -142,9 +142,9 @@ body {
 .top{
   padding: 0px;
   display: block;
-  margin:0 auto;
+  margin:0 auto 5px auto;
   img{   
-    margin:15px 15px 25px 0px;
+    margin:15px 15px 0px 0px;
     width:700px;
   }
   @media screen and (max-width:720px){
@@ -155,7 +155,8 @@ body {
 
 /* Horizontal divider line */
 
-.above {
+.long-line {
+  margin-top:30px;
   @media screen and (max-width:720px){
     display:none;
     margin:0;
@@ -163,19 +164,11 @@ body {
   
   }
   }
-  .below {
-    display: none;
-    @media screen and (max-width:720px){
-      display:block;
-      max-width: 100%;
-    }
-  
-  }
+
 /* This week's features */
   .features{
-    width:60%;
     margin:0 auto;
-    margin-top: 20px;
+    width:60%;
     @media screen and (max-width:720px){
       width:90%;}
       .curl{
@@ -184,6 +177,7 @@ body {
       float:none;
     }  
     .this_week{
+      margin:15px auto;
       display: inline-block;
       float:none;
       text-transform:uppercase;
@@ -204,7 +198,17 @@ body {
     }
    
 }
-
+/* This adds the image borders*/
+  
+    .bottom-bordered{
+      width:96%;
+      border-style: solid transparent;
+      border-width: 0px 0px 6px;
+      -moz-border-image: url(/images/short-line.png) 0 0 35 stretch;
+      -webkit-border-image: url(/images/short-line.png) 0 0 35 stretch;
+      -o-border-image: url(/images/short-line.png) 0 0 35 stretch;
+      border-image: url(/images/short-line.png) 0 0 35 stretch;
+    }
 /* Section with 3 images */
     .column-container{
       p{
@@ -228,9 +232,6 @@ body {
       .column-latest{
         float: left;
         width: 33%;
-        -webkit-border-image: url(images/short-line.png);
-        -o-border-image: url(images/short-line.png); 
-        border-image: url(images/short-line.png);
         @media screen and (max-width:720px){
         clear:both;
         width:100%;
@@ -256,11 +257,13 @@ body {
         display: block;
       }
     }
+
     }
 
 
 /* Section with 2 images */
       .column-container2{
+        margin-top:40px;
         clear:both;
         display:inline-block;
         img{
