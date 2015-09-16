@@ -175,7 +175,7 @@ body {
   .features{
     width:60%;
     margin:0 auto;
-    padding-top: 20px;
+    margin-top: 20px;
     @media screen and (max-width:720px){
       width:90%;}
       .curl{
@@ -225,9 +225,12 @@ body {
           width:320px;
       }
       }
-      .column-left{
+      .column-latest{
         float: left;
         width: 33%;
+        -webkit-border-image: url(images/short-line.png);
+        -o-border-image: url(images/short-line.png); 
+        border-image: url(images/short-line.png);
         @media screen and (max-width:720px){
         clear:both;
         width:100%;
@@ -235,7 +238,7 @@ body {
         
         }
       }
-      .column-right{
+      .column-newest{
         float: right;
         width: 33%;
         @media screen and (max-width:720px){
@@ -244,7 +247,7 @@ body {
         display: block;
       }
       }
-      .column-center{
+      .column-offer{
         display: inline-block;
         width: 33%;
         @media screen and (max-width:720px){
@@ -263,7 +266,7 @@ body {
         img{
         width:100%;
       }      
-      .column-a{
+      .column-featured{
         float:left;
         width:49%;
         @media screen and (max-width:720px){
@@ -273,7 +276,7 @@ body {
         margin-top:0px;
         }
       }
-      .column-b{
+      .column-cooks{
         float:right;
         width:49%;
         @media screen and (max-width:720px){
