@@ -103,10 +103,6 @@ body {
 
 .nav{
   padding-left: 2px;
-  @media screen and (max-width:720px){
-    
-  
-  }
   ul{
     list-style-type: none;
     text-align: center;
@@ -138,20 +134,47 @@ body {
   }
 }
 
-/* Section directly under main nav */
-.top{
-  padding: 0px;
-  display: block;
-  margin:0 auto 5px auto;
-  img{   
-    margin:15px 15px 0px 0px;
-    width:700px;
+/* Carousel under main nav */
+  .top{
+    margin-top:15px;
   }
-  @media screen and (max-width:720px){
-    width:320px;
-    overflow:hidden;
-    }
+  .top-slides{
+    margin:15px 0px;
   }
+#carousel {
+	width:700px;
+	height:317px;	
+	margin:0 auto;
+}
+
+#slides {
+	overflow:hidden;
+	/* fix ie overflow issue */
+	position:relative;
+	width:700;
+	height:317px;
+	border:none;
+}
+
+/* remove the list styles, width : item width * total items */	
+#slides ul {
+	position:relative;
+	left:0;
+	top:0;
+	list-style:none;
+	margin:0;
+	padding:0;	
+	width:2100px;			
+}
+
+/* width of the item, in this case I put 250x250x gif */
+#slides li {
+	width:700px;
+	height:317px;	
+	float:left;
+}
+
+.clear {clear:both}
 
 /* Horizontal divider line */
 
@@ -208,6 +231,7 @@ body {
       -webkit-border-image: url(/images/short-line.png) 0 0 35 stretch;
       -o-border-image: url(/images/short-line.png) 0 0 35 stretch;
       border-image: url(/images/short-line.png) 0 0 35 stretch;
+      behavior: url(/scripts/PIE.htc);
     }
 /* Section with 3 images */
     .column-container{
